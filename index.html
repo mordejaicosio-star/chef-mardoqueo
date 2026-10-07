@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Cocinando junto al Chef Mardoqueo</title>
 <meta name="theme-color" content="#C0651B">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -13,28 +13,23 @@
 <link rel="apple-touch-icon" href="icono.jpg">
 <link rel="icon" type="image/jpeg" href="icono.jpg">
 <style>
-  html,body{margin:0;padding:0;height:100%;overflow:hidden;background:#FAF3E1;}
-  #app{border:none;width:100%;height:100%;display:block;}
-  #carga{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
-    background:#FAF3E1;font-family:system-ui,sans-serif;color:#9E4E0F;z-index:10;transition:opacity .4s;}
-  #carga img{width:96px;height:96px;border-radius:22px;box-shadow:0 8px 24px rgba(154,94,31,.25);margin-bottom:18px;}
-  #carga .t{font-size:1.1rem;font-weight:700;}
-  #carga .s{font-size:.85rem;opacity:.7;margin-top:6px;}
-  .oculto{opacity:0;pointer-events:none;}
+  html,body{margin:0;height:100%;background:#FAF3E1;
+    font-family:system-ui,-apple-system,sans-serif;color:#9E4E0F;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
+  img{width:110px;height:110px;border-radius:24px;box-shadow:0 8px 24px rgba(154,94,31,.25);margin-bottom:20px;}
+  .t{font-size:1.15rem;font-weight:700;}
+  .s{font-size:.9rem;opacity:.7;margin-top:8px;}
+  a{color:#C0651B;margin-top:16px;font-size:.85rem;}
 </style>
+<script>
+  // Google no permite mostrar su app dentro de otra página, así que la ABRIMOS directo.
+  window.location.replace("https://script.google.com/macros/s/AKfycbw11Kl9oA8h35N4WVFrbGW1vLpLm6ZGzgRpTwKfCfvLDP3QdxfoeO49_l-oFd8xV1k0/exec?modo=publico");
+</script>
 </head>
 <body>
-  <div id="carga">
-    <img src="icono.jpg" alt="Chef Mardoqueo">
-    <div class="t">Encendiendo la cocina... 🍳</div>
-    <div class="s">Un momentito</div>
-  </div>
-  <iframe id="app" src="https://script.google.com/macros/s/AKfycbw11Kl9oA8h35N4WVFrbGW1vLpLm6ZGzgRpTwKfCfvLDP3QdxfoeO49_l-oFd8xV1k0/exec?modo=publico" allow="clipboard-write; clipboard-read"></iframe>
-  <script>
-    var f = document.getElementById("app");
-    var c = document.getElementById("carga");
-    f.addEventListener("load", function(){ setTimeout(function(){ c.classList.add("oculto"); }, 800); });
-    setTimeout(function(){ c.classList.add("oculto"); }, 6000);
-  </script>
+  <img src="icono.jpg" alt="Chef Mardoqueo">
+  <div class="t">Encendiendo la cocina... 🍳</div>
+  <div class="s">Abriendo tus recetas</div>
+  <a href="https://script.google.com/macros/s/AKfycbw11Kl9oA8h35N4WVFrbGW1vLpLm6ZGzgRpTwKfCfvLDP3QdxfoeO49_l-oFd8xV1k0/exec?modo=publico">Si no abre solo, toca aquí</a>
 </body>
 </html>
