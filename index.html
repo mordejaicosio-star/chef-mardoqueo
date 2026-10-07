@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+<title>Cocinando junto al Chef Mardoqueo</title>
+<meta name="theme-color" content="#C0651B">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Chef Mardoqueo">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icono.jpg">
+<link rel="icon" type="image/jpeg" href="icono.jpg">
+<style>
+  html,body{margin:0;padding:0;height:100%;overflow:hidden;background:#FAF3E1;}
+  #app{border:none;width:100%;height:100%;display:block;}
+  #carga{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    background:#FAF3E1;font-family:system-ui,sans-serif;color:#9E4E0F;z-index:10;transition:opacity .4s;}
+  #carga img{width:96px;height:96px;border-radius:22px;box-shadow:0 8px 24px rgba(154,94,31,.25);margin-bottom:18px;}
+  #carga .t{font-size:1.1rem;font-weight:700;}
+  #carga .s{font-size:.85rem;opacity:.7;margin-top:6px;}
+  .oculto{opacity:0;pointer-events:none;}
+</style>
+</head>
+<body>
+  <div id="carga">
+    <img src="icono.jpg" alt="Chef Mardoqueo">
+    <div class="t">Encendiendo la cocina... 🍳</div>
+    <div class="s">Un momentito</div>
+  </div>
+  <iframe id="app" src="https://script.google.com/macros/s/AKfycbw11Kl9oA8h35N4WVFrbGW1vLpLm6ZGzgRpTwKfCfvLDP3QdxfoeO49_l-oFd8xV1k0/exec?modo=publico" allow="clipboard-write; clipboard-read"></iframe>
+  <script>
+    var f = document.getElementById("app");
+    var c = document.getElementById("carga");
+    f.addEventListener("load", function(){ setTimeout(function(){ c.classList.add("oculto"); }, 800); });
+    setTimeout(function(){ c.classList.add("oculto"); }, 6000);
+  </script>
+</body>
+</html>

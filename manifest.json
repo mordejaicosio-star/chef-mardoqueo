@@ -1,0 +1,15 @@
+{
+  "name": "Cocinando junto al Chef Mardoqueo",
+  "short_name": "Chef Mardoqueo",
+  "description": "Recetas, menus y el catalogo premium de la Chef Ilanita.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FAF3E1",
+  "theme_color": "#C0651B",
+  "icons": [
+    { "src": "icono.jpg", "sizes": "256x256", "type": "image/jpeg", "purpose": "any" },
+    { "src": "icono-maskable.jpg", "sizes": "320x320", "type": "image/jpeg", "purpose": "maskable" }
+  ]
+}
